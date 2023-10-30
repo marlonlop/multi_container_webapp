@@ -18,7 +18,7 @@ const pgClient = new Pool({
     database: keys.pgDatabase,
     password: keys.pgPassword,
     port: keys.pgPort,
-    ssl: { rejectUnauthorized: false },
+    //ssl: { rejectUnauthorized: false },
 });
 
 //error listener and create postgres table first is needed

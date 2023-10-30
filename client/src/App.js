@@ -1,8 +1,9 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import OtherPage from './OtherPage';
-import Fib from './Fib'
+import Fib from './Fib';
 
 function App() {
   return (
@@ -10,9 +11,6 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Link to="/">Home</Link>
-          <Link to="/otherpage">other page</Link>
-          <p></p>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -21,6 +19,8 @@ function App() {
           >
             Learn React
           </a>
+          <Link to="/">Home</Link>
+          <Link to="/otherpage">Other Page</Link>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
